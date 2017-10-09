@@ -5,227 +5,204 @@
 <title>Tabelul periodic al elementelor</title>
 
 <style>
-	td.element
-	{
-	     width: 22.5pt;
-		 height: 22.5pt;
-	     text-align: center;
+	.tabel{
+		display: table;
+		border: 1px solid black;
+		border-spacing: 4pt;
+		text-align: center;
 	}
-	td.elementright
-	{
+	
+	.row{
+		display: table-row;
+	}
+	
+	.element{
+		display: table-cell;
+		vertical-align: middle;
+		border: 1px solid black;
+		padding: 4pt;
 		width: 22.5pt;
 		height: 22.5pt;
-	    text-align: center;
+	}
+	
+	.special{
+		font-size: 10px;
+		display: table-cell;
+		vertical-align: middle;
+		border: 1px solid black;
+		padding: 4pt;
+		width: 22.5pt;
+		height: 22.5pt;
+	}
+	
+	.blank{
+		display: table-cell;
+		border: 1px;
+		padding: 4pt;
+		width: 22.5pt;
+		height: 22.5pt;
+	}
+	
+	#right{
 		position: relative;
-		left: 459pt;
-
-	}
-	td.elementleft
-	{
-		width: 22.5pt;
-		height: 22.5pt;
-	    text-align: center;
-		position: relative;
-	}
-	td.special
-	{
-		width: 22.5pt;
-		height: 22.5pt;
-	    text-align: center;
-		font-size: 9px;
-	}
-	td.hide
-	{
-		width: 22.5pt;
-		height: 22.5pt;
-	    text-align: center;
-		empty-cells: hide;
-	}
-	tr.hide
-	{
-		width: 22.5pt;
-		height: 25.5pt;
-	    text-align: center;
-		empty-cells: hide;
+		left: 599pt;
 	}
 	</style>
-
+	
 </head>
+
 <body>
-<table id="tabelperiodic" width="auto" border="1">
-  <tbody>
-   <tr>
-   <td class="elementleft">H</td>
-   <td class="elementright">He</td>
-   </tr>
-    <tr>
-      <td class="element">Li</td>
-      <td class="element">Be</td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="element">B</td>
-      <td class="element">C</td>
-      <td class="element">N</td>
-      <td class="element">O</td>
-      <td class="element">F</td>
-      <td class="element">Ne</td>
-    </tr>
-    <tr>
-      <td class="element">Na</td>
-      <td class="element">Mg</td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="element">Al</td>
-      <td class="element">Si</td>
-      <td class="element">P</td>
-      <td class="element">S</td>
-      <td class="element">Cl</td>
-      <td class="element">Ar</td>
-    </tr>
-    <tr>
-      <td class="element">K</td>
-      <td class="element">Ca</td>
-      <td class="hide"></td>
-      <td class="element">Sc</td>
-      <td class="element">Ti</td>
-      <td class="element">V</td>
-      <td class="element">Cr</td>
-      <td class="element">Mn</td>
-      <td class="element">Fe</td>
-      <td class="element">Co</td>
-      <td class="element">Ni</td>
-      <td class="element">Cu</td>
-      <td class="element">Zn</td>
-      <td class="element">Ga</td>
-      <td class="element">Ge</td>
-      <td class="element">As</td>
-      <td class="element">Se</td>
-      <td class="element">Br</td>
-      <td class="element">Kr</td>
-    </tr>
-    <tr>
-      <td class="element">Rb</td>
-      <td class="element">Sr</td>
-      <td class="hide"></td>
-      <td class="element">Y</td>
-      <td class="element">Zr</td>
-      <td class="element">Nb</td>
-      <td class="element">Mo</td>
-      <td class="element">Tc</td>
-      <td class="element">Ru</td>
-      <td class="element">Rh</td>
-      <td class="element">Pd</td>
-      <td class="element">Ag</td>
-      <td class="element">Cd</td>
-      <td class="element">In</td>
-      <td class="element">Sn</td>
-      <td class="element">Sb</td>
-      <td class="element">Te</td>
-      <td class="element">I</td>
-      <td class="element">Xe</td>
-    </tr>
-    <tr>
-      <td class="element">Cs</td>
-      <td class="element">Ba</td>
-      <td class="special">57-70<br>*</td>
-      <td class="element">Lu</td>
-      <td class="element">Hf</td>
-      <td class="element">Ta</td>
-      <td class="element">W</td>
-      <td class="element">Re</td>
-      <td class="element">Os</td>
-      <td class="element">Ir</td>
-      <td class="element">Pt</td>
-      <td class="element">Au</td>
-      <td class="element">Hg</td>
-      <td class="element">Tl</td>
-      <td class="element">Pb</td>
-      <td class="element">Bi</td>
-      <td class="element">Po</td>
-      <td class="element">At</td>
-      <td class="element">Rn</td>
-    </tr>
-    <tr>
-      <td class="element">Fr</td>
-      <td class="element">Ra</td>
-      <td class="special">89-102<br>**</td>
-      <td class="element">Lr</td>
-      <td class="element">Rf</td>
-      <td class="element">Db</td>
-      <td class="element">Sg</td>
-      <td class="element">Bh</td>
-      <td class="element">Hs</td>
-      <td class="element">Mt</td>
-      <td class="element">Uun</td>
-      <td class="element">Uuu</td>
-      <td class="element">Uub</td>
-      <td class="hide"></td>
-      <td class="element">Uuq</td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-    </tr>
-    <tr class="hide">
-    </tr>
-    <tr>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="element">La</td>
-      <td class="element">Ce</td>
-      <td class="element">Pr</td>
-      <td class="element">Nd</td>
-      <td class="element">Pm</td>
-      <td class="element">Sm</td>
-      <td class="element">Eu</td>
-      <td class="element">Gd</td>
-      <td class="element">Tb</td>
-      <td class="element">Dy</td>
-      <td class="element">Ho</td>
-      <td class="element">Er</td>
-      <td class="element">Tm</td>
-      <td class="element">Yb</td>
-    </tr>
-    <tr>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="hide"></td>
-      <td class="element">Ag</td>
-      <td class="element">Th</td>
-      <td class="element">Pa</td>
-      <td class="element">U</td>
-      <td class="element">Np</td>
-      <td class="element">Pu</td>
-      <td class="element">Am</td>
-      <td class="element">Cm</td>
-      <td class="element">Bk</td>
-      <td class="element">Cf</td>
-      <td class="element">Es</td>
-      <td class="element">Fm</td>
-      <td class="element">Md</td>
-      <td class="element">No</td>
-    </tr>
-  </tbody>
-</table>
+
+<div class="tabel">
+	<div class="row">
+		<div class="element">H</div>
+		<div class="element" id="right">He</div>
+	</div>
+	<div class="row">
+		<div class="element">Li</div>
+		<div class="element">Be</div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="element">B</div>
+		<div class="element">C</div>
+		<div class="element">N</div>
+		<div class="element">O</div>
+		<div class="element">F</div>
+		<div class="element">Ne</div>
+	</div>
+	<div class="row">
+		<div class="element">Na</div>
+		<div class="element">Mg</div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="element">Al</div>
+		<div class="element">Si</div>
+		<div class="element">P</div>
+		<div class="element">S</div>
+		<div class="element">Cl</div>
+		<div class="element">Ar</div>
+	</div>
+	<div class="row">
+		<div class="element">K</div>
+		<div class="element">Ca</div>
+		<div class="blank"></div>
+		<div class="element">Sc</div>
+		<div class="element">Ti</div>
+		<div class="element">V</div>
+		<div class="element">Cr</div>
+		<div class="element">Mn</div>
+		<div class="element">Fe</div>
+		<div class="element">Co</div>
+		<div class="element">Ni</div>
+		<div class="element">Cu</div>
+		<div class="element">Zn</div>
+		<div class="element">Ga</div>
+		<div class="element">Ge</div>
+		<div class="element">As</div>
+		<div class="element">Se</div>
+		<div class="element">Br</div>
+		<div class="element">Kr</div>
+	</div>
+	<div class="row">
+		<div class="element">Rb</div>
+		<div class="element">Sr</div>
+		<div class="blank"></div>
+		<div class="element">Y</div>
+		<div class="element">Zr</div>
+		<div class="element">Nb</div>
+		<div class="element">Mo</div>
+		<div class="element">Tx</div>
+		<div class="element">Ru</div>
+		<div class="element">Rh</div>
+		<div class="element">Pd</div>
+		<div class="element">Ag</div>
+		<div class="element">Cd</div>
+		<div class="element">In</div>
+		<div class="element">Sn</div>
+		<div class="element">Sb</div>
+		<div class="element">Te</div>
+		<div class="element">I</div>
+		<div class="element">Xe</div>
+	</div>
+	<div class="row">
+		<div class="element">Cs</div>
+		<div class="element">Ba</div>
+		<div class="special">57-70<br>*</div>
+		<div class="element">Lu</div>
+		<div class="element">Hf</div>
+		<div class="element">Ta</div>
+		<div class="element">W</div>
+		<div class="element">Re</div>
+		<div class="element">Os</div>
+		<div class="element">Ir</div>
+		<div class="element">Pt</div>
+		<div class="element">Au</div>
+		<div class="element">Hg</div>
+		<div class="element">Tl</div>
+		<div class="element">Pb</div>
+		<div class="element">Bi</div>
+		<div class="element">Po</div>
+		<div class="element">At</div>
+		<div class="element">Rn</div>
+	</div>
+	<div class="row">
+		<div class="element">Fr</div>
+		<div class="element">Ra</div>
+		<div class="special">89-102<br>**</div>
+		<div class="element">Lr</div>
+		<div class="element">Rf</div>
+		<div class="element">Db</div>
+		<div class="element">Sg</div>
+		<div class="element">Bh</div>
+		<div class="element">Hs</div>
+		<div class="element">Mt</div>
+		<div class="element">Uun</div>
+		<div class="element">Uuu</div>
+		<div class="element">Uub</div>
+		<div class="blank"></div>
+		<div class="element">Uuq</div>
+	</div>
+	<div class="row">
+		<div class="blank"></div>
+	</div>
+	<div class="row">
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="blank"></div>
+		<div class="element">La</div>
+		<div class="element">Ce</div>
+		<div class="element">Pr</div>
+		<div class="element">Nd</div>
+		<div class="element">Pm</div>
+		<div class="element">Sm</div>
+		<div class="element">Eu</div>
+		<div class="element">Gd</div>
+		<div class="element">Tb</div>
+		<div class="element">Dy</div>
+		<div class="element">Ho</div>
+		<div class="element">Er</div>
+		<div class="element">Tm</div>
+		<div class="element">Yb</div>
+	</div>
+</div>
 
 </body>
 </html>
