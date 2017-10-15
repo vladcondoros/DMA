@@ -12,24 +12,22 @@
 
 var loadCategories = function (data) {
     for (var i = 0; i < data.length; i++) {
-        $('#' + i ).html('<option>' + data[i] + '</option>');
+        $('#' + i ).html('<text>' + data[i] + '</text>');
     }
-	$("button").click(function(){
-		$(selectedCategory);
-	});
 };
 
-var selectedCategory = function(){
-	var categoryName = $('button').toString();
-	$("#joke").html(categoryName);
-		
-	/*var randomJokeUrl = 'https://api.chucknorris.io/jokes/random?category=' + categoryName;
+function setCateg (x){
+	var categoryName = x.textContent;
+	var randomJokeUrl = 'https://api.chucknorris.io/jokes/random?category=' + categoryName;
 
     $.ajax({url: randomJokeUrl, method: 'GET'}).done(
         function (data) {
             $("#joke").html(data.value);
 		}
-		);*/
+		);
+}
+function resetCateg(x){
+	var categoryName = null;
 };
 
 $.ajax(
