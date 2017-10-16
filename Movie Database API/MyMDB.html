@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MyMDB</title>
+	<script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous">
+	</script>
+	
+	<style>
+		.header {
+			width: 100%;
+			height:250px;
+			min-width: 1050px;
+		}
+		#margincolumn{
+			width: 25%;
+			min-height: 400px;
+			display: inline-block;
+		}
+		#search{
+			width: 70%;
+			display: inline-block;
+			padding-left: 20px;
+			padding-top: 30px;
+			vertical-align: top;
+		}
+		#movies{
+			width: 20%;
+			display: inline-block;
+			vertical-align: top;
+		}
+		.movieposter{
+			width: 200px;
+			height: 400px;
+			display: table-cell;
+		}
+	</style>
+</head>
+<body>
+
+<div class = "header"><img src ="https://i.imgsafe.org/4b/4b13d8e487.jpeg" height="250" width="inherit"></div>
+<div class = "container">
+	<div id = "margincolumn"></div>
+		<div id = "search">
+	<input id = "srcbox" type="text" placeholder="Search..."> din anul
+	<select id= "year"></select>
+	actor
+	<select id= "actor"></select>
+		</div>
+		<div id = "movies">
+			<div class = "pager">
+				<span>
+					<a> « </a>
+				</span>
+			</div>
+			
+		</div>
+</div>
+
+</body>
+</html>
