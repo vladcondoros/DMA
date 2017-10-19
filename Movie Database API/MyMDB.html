@@ -15,50 +15,125 @@
 			height:250px;
 			min-width: 1050px;
 		}
+		.headerimg{
+			position: relative;
+			height: 250px;
+		}
 		#margincolumn{
 			width: 25%;
 			min-height: 400px;
 			display: inline-block;
 		}
-		#search{
-			width: 70%;
+		#maincontent{
+			width: 50%;
 			display: inline-block;
 			padding-left: 20px;
 			padding-top: 30px;
 			vertical-align: top;
 		}
 		#movies{
-			width: 20%;
-			display: inline-block;
+			width: 100%;
+			display: block;
 			vertical-align: top;
 		}
+		.movie{
+			width: 100%;
+			height: 184px;
+			margin-top: 8px;
+			margin-bottom: 8px;
+		}
+		.movietable{
+			float: left;
+		}
+		.movieimg{
+			float:left;
+		}
+		.moviedet{
+			float: left;
+			width: 81%;
+		}
 		.movieposter{
-			width: 200px;
-			height: 400px;
+			width: 140px;
+			height: 180px;
 			display: table-cell;
+			margin: 2px;
+		}
+		.movietitle{
+			text-transform: capitalize;
+			font-weight: bold;
+			margin-bottom: 20px;
+			display: table-caption;
+		}
+		.moviedescript{
+			display: table-cell;
+		}
+		.movierating{
+			position: absolute;
+			display: inline;
+			left: 74%;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.releasedate{
+			margin-top: 25px;
+			display: block;
+			font-size: 15px;
+		}
+		.language{
+			font-size: 15px;
+			text-transform: uppercase;
+		}
+		.pager{
+			align-self: center;
 		}
 	</style>
 </head>
 <body>
 
-<div class = "header"><img src ="https://i.imgsafe.org/4b/4b13d8e487.jpeg" height="250" width="inherit"></div>
+<div class = "header"><img class="headerimg" src ="https://i.imgsafe.org/88/88a770a1b5.jpeg"></div>
 <div class = "container">
 	<div id = "margincolumn"></div>
-		<div id = "search">
-	<input id = "srcbox" type="text" placeholder="Search..."> din anul
-	<select id= "year"></select>
-	actor
-	<select id= "actor"></select>
-		</div>
-		<div id = "movies">
-			<div class = "pager">
+		<div id = "maincontent">
+			<input id = "srcbox" type="text" placeholder="Caută un film..."> din anul
+			<select id= "year"></select>
+			actor
+			<select id= "actor"></select>
+			<button id="cauta" type="submit" onClick="validare()">Caută!</button>
+			<div id = "movies">
+				<div class = "pager">
 				<span>
-					<a> « </a>
+					<a id="previous"> « </a>
 				</span>
+				<span> 1 </span>
+				<span> 2 </span>
+				<span>...</span>
+				<span>
+					<a id="npage">n</a>
+				</span>
+				<span>
+					<a id="next"> » </a>
+				</span>
+				<span>dintr-un total de <a id="nrmovies"></a> filme</span>
+				
+				</div>
+				
+				<div class ="movie">
+					<div class="movieimg">
+						<span style="vertical-align: middle; display: table-cell">
+							<img class="movieposter">
+						</span>
+					</div>
+					<div class="moviedet">
+						<span class ="movierating">5.0</span>
+						<span class ="movietitle">Asd</span>
+						<span class ="moviedescript">asddf</span>
+						<span class ="releasedate">asdf</span>
+						<span class ="language">asdf</span>
+					</div>
+				</div>
 			</div>
-			
 		</div>
 </div>
-
+<script src="js/script.js"></script>
 </body>
 </html>
