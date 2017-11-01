@@ -17,7 +17,8 @@
 		}
 		.headerimg{
 			position: relative;
-			height: 250px;
+			height: inherit;
+			width: inherit;
 		}
 		#margincolumn{
 			width: 25%;
@@ -29,6 +30,7 @@
 			display: inline-block;
 			padding-left: 20px;
 			padding-top: 30px;
+			align: center;
 			vertical-align: top;
 		}
 		#movies{
@@ -91,48 +93,31 @@
 <body>
 
 <div class = "header"><img class="headerimg" src ="https://i.imgsafe.org/88/88a770a1b5.jpeg"></div>
-<div class = "container">
-	<div id = "margincolumn"></div>
-		<div id = "maincontent">
-			<input id = "srcbox" type="text" placeholder="Caută un film..."> din anul
-			<select id= "year"></select>
-			actor
-			<select id= "actor"></select>
-			<button id="cauta" type="submit" onClick="validare()">Caută!</button>
-			<div id = "movies">
-				<div class = "pager">
+<div class="container">
+    <div id="margincolumn"></div>
+    <div id="maincontent">
+        <input id="srcbox" type="text" placeholder="Caută un film..."> din anul
+        <select id="year"></select>
+        actor
+        <select id="actor"></select>
+        <button id="cauta" type="submit" onClick="validare()">Caută!</button>
+
+        <div class="pager">
 				<span>
-					<a id="previous"> « </a>
+					<button type="button" id="previous" data-page="" onclick="handlePaginationItemClicked(this)"
+                            href="#"> « </button>
 				</span>
-				<span> 1 </span>
-				<span> 2 </span>
-				<span>...</span>
-				<span>
-					<a id="npage">n</a>
+
+            <span>
+                    <button type="button" id="next" data-page="" onclick="handlePaginationItemClicked(this)" href="#"> »	 </button>
 				</span>
-				<span>
-					<a id="next"> » </a>
-				</span>
-				<span>dintr-un total de <a id="nrmovies"></a> filme</span>
-				
-				</div>
-				
-				<div class ="movie">
-					<div class="movieimg">
-						<span style="vertical-align: middle; display: table-cell">
-							<img class="movieposter">
-						</span>
-					</div>
-					<div class="moviedet">
-						<span class ="movierating">5.0</span>
-						<span class ="movietitle">Asd</span>
-						<span class ="moviedescript">asddf</span>
-						<span class ="releasedate">asdf</span>
-						<span class ="language">asdf</span>
-					</div>
-				</div>
-			</div>
-		</div>
+            <span>dintr-un total de <a id="nrmovies"></a> filme</span>
+
+        </div>
+
+        <div id="movies">
+        </div>
+    </div>
 </div>
 <script src="js/script.js"></script>
 </body>
